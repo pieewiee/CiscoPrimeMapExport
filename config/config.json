@@ -1,0 +1,28 @@
+{
+    "Domain": "https://your.cisco.prime",
+    "username": "username",
+    "password": "password",
+    "Cprime": {
+        "sites": "/webacs/maps/domains?type=1&pageSize=9999",
+        "Domains": "/webacs/maps/domains/{id}/members?pageSize=9999",
+        "AccessPoints": "/webacs/maps/domains/{id}/aps?pageSize=9999&detailedView=true&",
+        "LoginPayload": "&spring-security-redirect=%2Fpages%2Fcommon%2Findex.jsp%3F%26selectedCategory%3Den&action=login",
+        "login": "/webacs/j_spring_security_check",
+        "logout": "/webacs/j_spring_security_logout",
+        "headerLogin": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    },
+
+    "logging": {
+        "filename": "messages.log",
+        "DateFormat": "yyyy/MM/dd HH:mm:ss",
+        "LogTypes": [
+            "INFO",
+            "WARN",
+            "ERROR",
+            "FATAL",
+            "DEBUG"
+        ]
+    }
+}
